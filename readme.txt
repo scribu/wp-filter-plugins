@@ -1,0 +1,24 @@
+=== Filter Plugins ===
+Contributors: scribu
+Tags: admin, plugins, filter
+Requires at least: 3.0
+Tested up to: 3.2
+Stable tag: trunk
+
+Allows you to quickly filter plugins by author in the admin.
+
+== Description ==
+
+This plugin adds a dropdown with all the plugin author names. When you select an author, only those plugins remain visible.
+
+Links: [Author's Site](http://scribu.net)
+
+== Screenshots ==
+
+1. The dropdown
+
+== Changelog ==
+
+= 1.0 =
+* initial release
+

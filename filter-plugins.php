@@ -26,7 +26,7 @@ class Filter_Plugins {
 ?>
 		<script type="text/javascript">
 (function($){
-	var $select = $('<select>').append( $('<option>').html('&mdash; Author &mdash;') );
+	var $select = $('<select>').append( $('<option value="__pba_none">').html('&mdash; Author &mdash;') );
 
 	var authors = [];
 	$('.pba-id').each(function(){
@@ -40,12 +40,17 @@ class Filter_Plugins {
 	});
 
 	$select.change(function(){
-		var selector = '.pba-id[data-author="' + $(this).val() + '"]';
+		var value = $(this).val();
+
+		if ( '__pba_none' == value ) {
+			$('#the-list tr').show();
+			return;
+		}
 
 		$('#the-list tr').each(function(){
 			var $row = $(this);
 
-			if ( $row.find(selector).length )
+			if ( $row.find('.pba-id[data-author="' + value + '"]').length )
 				$row.show();
 			else
 				$row.hide();

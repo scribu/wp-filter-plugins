@@ -19,6 +19,10 @@ Links: [Author's Site](http://scribu.net)
 
 == Changelog ==
 
+= 1.0.1 =
+* show dropdown on network plugins screen too
+* fixed default value
+
 = 1.0 =
 * initial release
 

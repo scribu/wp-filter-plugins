@@ -5,7 +5,7 @@ Description: Filter plugins by their author.
 Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://wordpress.org/extend/plugins/filter-plugins/
-Version: 1.0
+Version: 1.0.1
 */
 
 class Filter_Plugins {

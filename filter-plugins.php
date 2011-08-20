@@ -21,7 +21,7 @@ class Filter_Plugins {
 	function admin_footer() {
 		$screen = get_current_screen();
 
-		if ( 'plugins' != $screen->base )
+		if ( !in_array( $screen->base, array( 'plugins', 'plugins-network' ) ) )
 			return;
 ?>
 		<script type="text/javascript">

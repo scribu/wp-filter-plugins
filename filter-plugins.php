@@ -6,6 +6,8 @@ Author: scribu
 Author URI: http://scribu.net
 Plugin URI: http://wordpress.org/extend/plugins/filter-plugins/
 Version: 1.0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 class Filter_Plugins {
